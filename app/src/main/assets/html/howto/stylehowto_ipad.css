@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	font-size:100%;
+	margin:0;
+	padding:0;
+}
+.control-slider2f .bx-wrapper {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	}
+.control-slider2f .bx-wrapper .bx-viewport {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	left: 0;
+	background: #fff;
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+	-ms-transform: translatez(0);
+	-o-transform: translatez(0);
+	transform: translatez(0);
+	}	
+.control-slider2f .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: 3%;
+	width: 100%;
+	}	
+.control-slider2f .bx-wrapper .bx-prev {
+	background: url(left.png) no-repeat;
+	}	
+.control-slider2f .bx-wrapper .bx-next {
+	background: url(right.png) no-repeat;
+	}
+
+.control-slider2f .bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.control-slider2f .bx-wrapper .bx-next:hover {
+	background-position: 0 0;
+}		
+.control-slider2f .bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 96%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+	}
+.control-slider2f .bx-wrapper .bx-controls-direction a.bx-prev{
+	background-position: 0 0;
+	left: 40%;
+	}
+.control-slider2f .bx-wrapper .bx-controls-direction a.bx-next{
+	background-position: 100% 0;
+	right:40%;
+	}	
+.control-slider2f .bx-wrapper img {
+	width: 100%;
+	display: block;
+	max-height: 100%;
+	}			

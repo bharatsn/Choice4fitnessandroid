@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=false;" />
+
+<title>How to</title>
+
+<style>
+/*html { 
+  background: url(bg1.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.control-slider2f .bx-wrapper .bx-viewport {
+	background: none !important;
+}*/
+</style>
+</head>
+
+<body>
+	<div class="container-howto-iphone2f">
+    	<div class="control-slider2f">
+        	<ul class="bxslider">
+              <li><img src="th/1.jpg" /></li>
+              <li><img src="th/2.jpg" /></li>
+              <li><img src="th/3.jpg" /></li>
+              <li><img src="th/4.jpg" /></li>
+              <li><img src="th/5.jpg" /></li>
+              <li><img src="th/6.jpg" /></li>
+              <li><img src="th/7.jpg" /></li>
+              <li><img src="th/8.jpg" /></li>
+              <li><img src="th/9.jpg" /></li>
+            </ul>
+       </div><!--end control-slider2f--> 
+    </div><!--end container-howto-iphone2f-->
+
+</body>
+
+	<!-- css layout -->
+    <link href="../stylehowto_ipad.css" rel="stylesheet" /> 
+	<!-- jquery -->
+    <script src="../jquery.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="../jquery.bxslider.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="../jquery.bxslider.css" rel="stylesheet" />   
+    
+    <script>
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+			  auto: true,
+			  touchEnabled:true
+			  });
+		});
+	</script>      
+</html>

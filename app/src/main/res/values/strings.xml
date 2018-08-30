@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Choice4fitness</string>
+
+    <string name="nav_item_home">My Profile</string>
+    <string name="nav_item_friends">Tracking</string>
+    <string name="nav_item_notifications">Nutrition</string>
+    <string name="nav_item_music">Music</string>
+    <string name="nav_item_report">Report</string>
+    <string name="nav_item_community">Community</string>
+    <string name="nav_item_help">Help</string>
+
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_music</item>
+        <item>@string/nav_item_report</item>
+        <item>@string/nav_item_community</item>
+        <item>@string/nav_item_help</item>
+    </string-array>
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Nutrition</string>
+    <string name="title_Music">Music</string>
+    <string name="title_report">Report</string>
+    <string name="title_community">Community</string>
+    <string name="title_help">Help</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>

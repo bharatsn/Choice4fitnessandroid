@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* CSS Document */
+html,body
+{
+	margin: 0px;
+	padding: 0px;  
+}
+.container-book2f{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	background-image: url(bg.png);
+	background-repeat: repeat;
+/*	padding-top: 20%;*/
+	}
+.box-shelf2f{
+	position: relative;
+	/*background-image: url(img-shelf.png);*/
+	background-repeat: no-repeat;
+	min-height: 700px;
+	margin-left: 40px;
+	margin-right: 40px;
+	background-size: 100%;
+	}	
+.control-book2f{
+	position: relative;
+	/*top: -267px;*/
+	background-image:url(img-shelf.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	min-height:360px;
+	background-position:bottom;
+	}	
+.box-book{
+	position: relative;
+	float: left;
+	/*margin-top: 65px;*/
+	width: 29%;
+	padding: 10px 0;
+	}	
+.box-book img{
+	width: 80%;
+	-moz-box-shadow: 1px 2px 5px #6b6e73;
+	-webkit-box-shadow: 1px 2px 5px #6b6e73;
+	box-shadow: 1px 2px 5px #6b6e73;
+	}	
+.book{
+	position: absolute;
+	bottom: 15px;
+	width: 80%;
+	margin-left: 17%;
+	}	
+@media (max-width:991px){	
+	.control-book2f{
+		min-height:300px;
+		}	
+}
+@media (max-width:768px){
+	.book{
+	bottom: 10px;
+	}	
+	.control-book2f {
+	min-height: 250px;
+	}	
+}
+@media (max-width:480px){
+	.book{
+	bottom: -3px;
+	}	
+	.control-book2f {
+	min-height: 150px;
+	}
+		
+}		
+			
+
+            

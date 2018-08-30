@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>PCD</title>
+<link href="pdc_book_iphone.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container-book2f">
+    		<div class="box-shelf2f">
+            	<div class="control-book2f">
+                    <div class="box-book">
+                        <img src="img-book01.jpg">
+                   </div><!--end box-book-->
+                   <div class="box-book">
+                        <img src="img-book02.jpg">
+                   </div><!--end box-book-->
+                   <div class="box-book">
+                        <img src="img-book03.jpg">
+                   </div><!--end box-book-->
+                   <div class="box-book">
+                        <img src="img-book04.jpg">
+                   </div><!--end box-book-->
+                   <div class="box-book">
+                        <img src="img-book05.jpg">
+                   </div><!--end box-book-->
+                   <div class="box-book">
+                        <img src="img-book06.jpg">
+                   </div><!--end box-book-->
+
+               </div><!--end  control-book2f-->    
+           </div><!--end box-shelf2f-->
+    </div><!--end container-book2f-->
+</body>
+</html>

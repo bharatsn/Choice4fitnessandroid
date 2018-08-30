@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="jquery.js">
+</script>
+<script src="highcharts.js"></script>
+
+
+</head>
+
+<body>
+<div id="container" style="min-width: 310px; height: 300px; margin: 0 auto"></div>
+<script>
+/*$(document).ready(function(){
+    meraFunc('46,98,123|26 Mar,27 Mar,28 Mar|Pm10');
+});*/
+function meraFunc(abc) {
+    var email_array = abc.split('|');
+    // console.log(abc);
+    var val1 = email_array[0].split(',');
+    var val2 = email_array[1].split(',');
+    var drawdata = new Array();
+
+for(var i=0; i < val1.length; i++){
+
+    if(val1[i] == 0){
+        val1[i] = null;
+    } else {
+        // console.log(val1[i]);
+        //val1[i] = parseInt(val1[i]);
+        if(email_array[2] == 'PM10' || email_array[2] == 'PM2.5'){
+            if(parseInt(val1[i]) < 50){
+                var json = {};
+                json.y = parseInt(val1[i]);
+                json.marker = {fillColor: '#29ABE2'};
+                drawdata[i] = json;
+            } else if(parseInt(val1[i]) < 100 && parseInt(val1[i]) >= 50){
+                var json = {};
+                json.y = parseInt(val1[i]);
+                json.marker = {fillColor: '#8CC63F'};
+                drawdata[i] = json;
+            } else if(parseInt(val1[i]) < 200 && parseInt(val1[i]) >= 100){
+                var json = {};
+                json.y = parseInt(val1[i]);
+                json.marker = {fillColor: '#F6DD36'};
+                drawdata[i] = json;
+            }  else if(parseInt(val1[i]) < 300 && parseInt(val1[i]) >= 200){
+                var json = {};
+                json.y = parseInt(val1[i]);
+                json.marker = {fillColor: '#FBB03B'};
+                drawdata[i] = json;
+            } else if(parseInt(val1[i]) > 300 && parseInt(val1[i]) <= 500){
+                var json = {};
+                json.y = parseInt(val1[i]);
+                json.marker = {fillColor: '#FF0000'};
+                drawdata[i] = json;
+            } else if(parseInt(val1[i]) > 500){
+                var json = {};
+                json.y = parseInt(val1[i]);
+                json.marker = {fillColor: '#7E0123'};
+                drawdata[i] = json;
+            }
+        } else if(email_array[2] == 'AQI' || email_array[2] == 'PSI') {
+        	 if(parseInt(val1[i]) < 50){
+                var json = {};
+                json.y = parseInt(val1[i]);
+                json.marker = {fillColor: '#29ABE2'};
+                drawdata[i] = json;
+            } else if(parseInt(val1[i]) < 100 && parseInt(val1[i]) >= 50){
+                var json = {};
+                json.y = parseInt(val1[i]);
+                json.marker = {fillColor: '#8CC63F'};
+                drawdata[i] = json;
+            } else if(parseInt(val1[i]) < 200 && parseInt(val1[i]) >= 100){
+                var json = {};
+                json.y = parseInt(val1[i]);
+                json.marker = {fillColor: '#F6DD36'};
+                drawdata[i] = json;
+            }  else if(parseInt(val1[i]) < 300 && parseInt(val1[i]) >= 200){
+                var json = {};
+                json.y = parseInt(val1[i]);
+                json.marker = {fillColor: '#FBB03B'};
+                drawdata[i] = json;
+            } else if(parseInt(val1[i]) > 300 && parseInt(val1[i]) <= 500){
+                var json = {};
+                json.y = parseInt(val1[i]);
+                json.marker = {fillColor: '#FF0000'};
+                drawdata[i] = json;
+            } else if(parseInt(val1[i]) > 500){
+                var json = {};
+                json.y = parseInt(val1[i]);
+                json.marker = {fillColor: '#7E0123'};
+                drawdata[i] = json;
+            }
+        
+        }
+    }
+}
+// console.log(drawdata);
+    for(var i=0; i < val2.length; i++){
+        val2[i] = val2[i];
+    }
+    // console.log(val2);
+    if(email_array[2] == 'AQI'){
+        var trick = [0, 50, 100, 200, 300];
+        var lv11 = 48.8;
+        var lv12 = 50;
+        var lv21 = 98.8;
+        var lv22 = 100;
+        var lv31 = 198.8;
+        var lv32 = 200;
+        var lv41 = 298.8;
+        var lv42 = 300;
+    } else if(email_array[2] == 'PM10'){
+        var trick = [0, 50, 100, 200, 300];
+        var lv11 = 48.8;
+        var lv12 = 50;
+        var lv21 = 98.8;
+        var lv22 = 100;
+        var lv31 = 198.8;
+        var lv32 = 200;
+        var lv41 = 298.8;
+        var lv42 = 300;
+    } else if(email_array[2] == 'PM2.5'){
+        var trick = [0, 50, 100, 200, 300];
+        var lv11 = 48.8;
+        var lv12 = 50;
+        var lv21 = 98.8;
+        var lv22 = 100;
+        var lv31 = 198.8;
+        var lv32 = 200;
+        var lv41 = 298.8;
+        var lv42 = 300;
+    } else  if(email_array[2] == 'PSI'){
+        var trick = [0, 50, 100, 200, 300];
+        var lv11 = 48.8;
+        var lv12 = 50;
+        var lv21 = 98.8;
+        var lv22 = 100;
+        var lv31 = 198.8;
+        var lv32 = 200;
+        var lv41 = 298.8;
+        var lv42 = 300;
+	}
+
+
+        $('#container').highcharts({
+                 chart: {
+                backgroundColor: '#2d2d2f',
+                type: 'line'
+            },
+            title: {
+                text: '',
+                x: -20 //center
+            },
+            credits: {
+            enabled: false
+                                                },             
+            xAxis: {
+                categories: val2
+            },
+            yAxis: {
+                tickPositions: trick,
+                title: {
+                    text: email_array[2]
+                },
+                 plotBands: [{ // Light air
+                    from: lv11,
+                    to: lv12,
+                    color: '#66FFFF',
+                    label: {
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                },{ // Light air
+                    from: lv21,
+                    to: lv22,
+                    color: '#00FF00',
+                    label: {
+                        text: '',
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                },{ // Light air
+                    from: lv31,
+                    to: lv32,
+                    color: '#FFFF00',
+                    label: {
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+               },{ // Light air
+                    from: lv41,
+                    to: lv42,
+                    color: '#FF9900',
+                    label: {
+                        style: {
+                            color: '#606060'
+                        }
+                    }
+                }]
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+				enabled: false,
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+             plotOptions: {
+                line: {
+                    dataLabels: {
+                        enabled: true,
+						y:-8,
+                        style: {
+                            textShadow: '0 0 3px white, 0 0 3px white',
+							fontWeight: 'Bold',
+							fontSize: '20'
+                        }
+                    },
+                    enableMouseTracking: false,
+                    marker: {
+                        radius: 10,
+                        lineColor: '#ffffff',
+                        lineWidth: 4,
+                        symbol:   'circle'
+                    }
+                },
+                    series: {
+                        lineWidth: 5,
+                        lineColor: '#ffffff',
+                        shadow: true
+                    }
+            },
+            series: [{
+                name: email_array[2],
+                data: drawdata
+            }]
+        });
+}  
+
+</script>
+</body>
+</html>
