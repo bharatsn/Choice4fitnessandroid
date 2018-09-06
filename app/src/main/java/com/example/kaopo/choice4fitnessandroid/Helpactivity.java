@@ -10,6 +10,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.facebook.login.widget.ProfilePictureView;
 
 import activity.FragmentDrawer;
 
@@ -26,6 +29,15 @@ public class Helpactivity extends Userinforactivity implements FragmentDrawer.Fr
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        Bundle bundle = getIntent().getExtras();
+        userId = bundle.getString("FID");
+        name = bundle.getString("FName");
+        profilePictureView = (ProfilePictureView) findViewById(R.id.profilepictureslide);
+        idtext = (TextView) findViewById(R.id.textValueID);
+        Fname = (TextView) findViewById(R.id.textValuename);
+        idtext.setText(userId);
+        Fname.setText(name);
+        profilePictureView.setProfileId(userId);
         drawerFragment = (FragmentDrawer)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawerhelp);
         drawerFragment.setUp(R.id.fragment_navigation_drawerhelp, (DrawerLayout) findViewById(R.id.drawer_layout), mToolbar);
@@ -35,6 +47,8 @@ public class Helpactivity extends Userinforactivity implements FragmentDrawer.Fr
             @Override
             public void onClick(View view) {
                 Intent mainIntent = new Intent().setClass(Helpactivity.this,Howtoactivity.class);
+                mainIntent.putExtra("FID",userId);
+                mainIntent.putExtra("FName",name);
                 startActivity(mainIntent);
             }
         });
@@ -49,6 +63,8 @@ public class Helpactivity extends Userinforactivity implements FragmentDrawer.Fr
     public void onDrawerItemSelected(View view, int position) {
         if(position == 0){
             Intent mainIntent = new Intent().setClass(Helpactivity.this,Userinforactivity.class);
+            mainIntent.putExtra("FID",userId);
+            mainIntent.putExtra("FName",name);
             startActivity(mainIntent);
 
         }

@@ -1,0 +1,380 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+   >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:text="User Information"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="PHYSICAL PARAMETERS"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:background="#80000000"
+                />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" android:orientation="horizontal">
+           <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Height: "
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"/>
+           <EditText
+               android:id="@+id/heightvalue"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:ems="3"/>
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+
+               android:text="Weight: "
+               android:layout_marginLeft="20dp"
+               android:layout_marginBottom="10dp"/>
+           <EditText
+               android:id="@+id/weightvalue"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:ems="3"/>
+
+       </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="Date of measurement: "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/dmvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="BMI(Sys calculated): "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/bmivalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="BMI Percentile(Sys calculated): "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/bmipervalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="Date of birth: "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/dobvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="Age(months): "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/monthsvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="VITAL SIGNS PARAMETERS"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:background="#80000000"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="Heart Rate/Pulse Rate: "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/hearthratevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:text="BMP"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="Blood Pressure(Systolic/Diastolic): "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/systolicvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"/>
+                <EditText
+                    android:id="@+id/diastolicvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="Respiratory Rate: "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/respiratoryvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="5"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="BMP"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="Body Temperature: "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/btempvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="RISK FACTORS"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:background="#80000000"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="Glucose Level: "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/glucosevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:text="mg/dL"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="Total Cholesterol: "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/cholesterolvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:text="mg/dL"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="Total Fat: "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/totalfatvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="5"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:text="%"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+</RelativeLayout>

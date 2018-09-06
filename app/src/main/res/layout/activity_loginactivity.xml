@@ -16,6 +16,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/login1"
             >
 
             <TextView
@@ -32,11 +33,11 @@
                 android:text="E-mail"
                 android:textColor="#FFFFFF" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/login1" />
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:srcCompat="@drawable/login1" />-->
 
             <EditText
                 android:id="@+id/login_email"
@@ -107,10 +108,16 @@
 
         </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
+
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/loginfacebook_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp" />
+
 
     </LinearLayout>
 
