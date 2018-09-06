@@ -27,10 +27,10 @@ public class UserinforFragment extends Fragment  implements SensorEventListener 
         View rootView = inflater.inflate(R.layout.fragment_userinformation, container, false);
 
 
-        mSensorManager = ((SensorManager) getSystemService(SENSOR_SERVICE));
-        mHeartRateSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_HEART_RATE);
-        mSensorManager.registerListener(this, mHeartRateSensor, SensorManager.SENSOR_DELAY_NORMAL);
-        mSensorManager.registerListener(sensorEventListener, mHeartRateSensor, mSensorManager.SENSOR_DELAY_FASTEST);
+//        mSensorManager = ((SensorManager) getSystemService(SENSOR_SERVICE));
+//        mHeartRateSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_HEART_RATE);
+//        mSensorManager.registerListener(this, mHeartRateSensor, SensorManager.SENSOR_DELAY_NORMAL);
+//        mSensorManager.registerListener(sensorEventListener, mHeartRateSensor, mSensorManager.SENSOR_DELAY_FASTEST);
 
 
 //        String strtext = getArguments().getString("edttext");
