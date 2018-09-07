@@ -10,8 +10,63 @@
     <string name="nav_item_community">Community</string>
     <string name="nav_item_help">Help</string>
 
+    <string-array name="title">
+        <item>@string/mr</item>
+        <item>@string/ms</item>
+        <item>@string/mrs</item>
 
+    </string-array>
+    <string name="mr">Mr.</string>
+    <string name="ms">Ms.</string>
+    <string name="mrs">Mrs.</string>
 
+    <string-array name="gender">
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string-array name="education">
+        <item>@string/school</item>
+        <item>@string/undergrad</item>
+        <item>@string/grad</item>
+        <item>@string/postgrad</item>
+    </string-array>
+    <string name="school">School</string>
+    <string name="undergrad">Undergrad</string>
+    <string name="grad">Graduate</string>
+    <string name="postgrad">Post-Graduate</string>
+
+    <string-array name="forgetpasswordques">
+        <item>@string/schoollevel</item>
+        <item>@string/bestfriend</item>
+        <item>@string/firstcar</item>
+        <item>@string/nameofschool</item>
+    </string-array>
+    <string name="schoollevel">What is your highest school level?</string>
+    <string name="bestfriend">What is the name of your best friend?</string>
+    <string name="firstcar">What is your first car model?</string>
+    <string name="nameofschool">What is your High-school name?</string>
+
+    <string-array name="race">
+        <item>@string/hispanic</item>
+        <item>@string/latino</item>
+        <item>@string/americanindia</item>
+        <item>@string/white</item>
+        <item>@string/philipino</item>
+        <item>@string/black</item>
+        <item>@string/hawaian</item>
+        <item>@string/asian</item>
+    </string-array>
+    <string name="hispanic">Hispanic</string>
+    <string name="latino">Latino/Spanish Origin</string>
+    <string name="americanindia">American Indian/Alaska Native</string>
+    <string name="white">White</string>
+    <string name="philipino">Filipino</string>
+    <string name="black">African American</string>
+    <string name="hawaian">Native Hawaiian/Pacific Islander</string>
+    <string name="asian">Asian</string>
     <!-- navigation drawer item labels  -->
     <string-array name="nav_drawer_labels">
         <item>@string/nav_item_home</item>
