@@ -26,7 +26,7 @@
                 layout="@layout/headerbar" />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/help1"
+            android:id="@+id/faqslayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -46,7 +46,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/help2"
+            android:id="@+id/newslayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -65,7 +65,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/help3"
+            android:id="@+id/aboutuslayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -84,7 +84,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/help4"
+            android:id="@+id/mydiarylayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"

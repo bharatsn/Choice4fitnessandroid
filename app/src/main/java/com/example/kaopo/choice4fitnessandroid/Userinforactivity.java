@@ -162,8 +162,14 @@ public class Userinforactivity extends AppCompatActivity implements FragmentDraw
     public void onDrawerItemSelected(View view, int position) {
         Toast.makeText(getApplicationContext(),
                 "Coming soon "+position, Toast.LENGTH_LONG).show();
+        if(position == 1){
+            Intent mainIntent = new Intent().setClass(Userinforactivity.this,Trackingactivity.class);
+            mainIntent.putExtra("FID",userId);
+            mainIntent.putExtra("FName",name);
+            startActivity(mainIntent);
 
-        if(position == 6){
+        }
+       else if(position == 6){
             Intent mainIntent = new Intent().setClass(Userinforactivity.this,Helpactivity.class);
             mainIntent.putExtra("FID",userId);
             mainIntent.putExtra("FName",name);
