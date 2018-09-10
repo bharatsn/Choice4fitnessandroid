@@ -58,7 +58,7 @@ public class Trackingactivity extends AppCompatActivity implements FragmentDrawe
         profilePictureView.setProfileId(userId);
         drawerFragment = (FragmentDrawer)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawertracking);
-        drawerFragment.setUp(R.id.fragment_navigation_drawerhelp, (DrawerLayout) findViewById(R.id.drawer_layout), mToolbar);
+        drawerFragment.setUp(R.id.fragment_navigation_drawertracking, (DrawerLayout) findViewById(R.id.drawer_layout), mToolbar);
         drawerFragment.setDrawerListener(this);
 
         footerimg = (ImageView)findViewById(R.id.footerimgtracking);
