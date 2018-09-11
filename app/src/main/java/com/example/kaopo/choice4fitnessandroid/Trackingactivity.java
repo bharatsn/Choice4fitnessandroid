@@ -116,6 +116,35 @@ public class Trackingactivity extends AppCompatActivity implements FragmentDrawe
             startActivity(mainIntent);
 
         }
+
+        else if(position == 2){
+            Intent mainIntent = new Intent().setClass(Trackingactivity.this,NutritionActivity.class);
+            mainIntent.putExtra("FID",userId);
+            mainIntent.putExtra("FName",name);
+            startActivity(mainIntent);
+
+        }
+        else if(position == 3){
+            Intent mainIntent = new Intent().setClass(Trackingactivity.this,MusicActivity.class);
+            mainIntent.putExtra("FID",userId);
+            mainIntent.putExtra("FName",name);
+            startActivity(mainIntent);
+
+        }
+        else if(position == 4){
+            Intent mainIntent = new Intent().setClass(Trackingactivity.this,ReportActivity.class);
+            mainIntent.putExtra("FID",userId);
+            mainIntent.putExtra("FName",name);
+            startActivity(mainIntent);
+
+        }
+        else if(position == 5){
+            Intent mainIntent = new Intent().setClass(Trackingactivity.this,CommuntityActivity.class);
+            mainIntent.putExtra("FID",userId);
+            mainIntent.putExtra("FName",name);
+            startActivity(mainIntent);
+
+        }
         else if(position == 6){
             Intent mainIntent = new Intent().setClass(Trackingactivity.this,Helpactivity.class);
             mainIntent.putExtra("FID",userId);

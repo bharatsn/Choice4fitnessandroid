@@ -1,21 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-     android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
-    android:background="@drawable/c4floading">
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/c4floading"
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/headerbar" />
+        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+
+            >
 
 
 
-    <!--<ImageView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:id="@+id/imageView"-->
-        <!--android:layout_centerVertical="true"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:background=""/>-->
+            <LinearLayout
+                android:id="@+id/whatbmiq1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:text="FAQS">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="What is BMI and BMR?" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/whatbmia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="BMI is an acronym for Body Mass Index. The BMI can be used to determine if an individual is overweight, and is determined by dividing an individual’s weight by the square of their height. According to the CDC’s Website, if an individual’s BMI is between 25 and 29.9 they are considered overweight; if their BMI is more than 30 they are considered obese. Check yours.
+
+BMR is an acronym for Basal Metabolic Rate. The BMR can be used to determine the amount of calories an individual expends per day if they sit and do nothing the entire day. By knowing your BMR, you will have a greater idea of how many calories you should consume in order to lose, maintain, or gain weight. BMR generally decreases with age. Stress, sickness, environmental factors, like, temperature can affect BMR. Check yours."
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/whatishearth"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:text="FAQS">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="What is Heart rate and Pulse rate?" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/whatisheartha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Our Heart pumps the blood that is vital for every organ including brain to function. It pumps out the blood by contraction and when it relaxes, blood flows in. The force of these contraction (Systolic) and relaxation (Diastolic) determines the blood pressure. This contraction and relaxation can be viewed as a electrical activity using an electrocardiogram (EKG or ECG). Our heart beats with a certain rhythm for pumping blood. Normal heart rate, which can be heard and measured by a physician, indicates normal blood pressure, which also can be monitored using a Blood Pressure monitor that provides the readings on Systolic (contraction) and Diastolic (relaxation). Most of the Blood Pressure Monitors also provide Pulse Rate."
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/knowabout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:text="FAQS">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Know about your vital signs" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/knowabouta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:text="Vital signs include heart beat, respiratory rate, temperature, and blood pressure. What do these mean and how these are measured, see
+
+Normal vital sign ranges for the average healthy adult while resting are:
+
+Blood pressure (Systolic/Diastolic): 90/60 mm/Hg to 120/80 mm/Hg
+
+Breathing/Respiratory rate: 12 - 18 breaths per minute
+
+Pulse rate: 60 - 100 beats per minute
+
+Temperature: 97.8 - 99.1 degrees Fahrenheit / average 98.6 degrees Fahrenheit
+
+Normal vital signs change with age, sex, weight, exercise tolerance, and overall health.
+
+ "
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/knowglucose"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:text="FAQS">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Know your Glucose level." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/knowglucosea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Glucose is a major source of energy for most cells of the human body, including those in the brain. Blood carries this sugar and transports to the cells. Carbohydrates are quickly turned into glucose in the body. This raises blood glucose level just after eating food containing carbohydrates (rice, bread, pasta, etc.). After a while, this level comes down to normal. Hormones made in the body called insulin and glucagon help control blood glucose levels. For any individual, it is important to measure the blood glucose level. See how and when it should be measured. Elevated level of blood glucose is a result of Diabetes. To know more about this complex metabolic disorder, see.
+
+A fasting blood glucose level between 70 and 100 mg/dL is considered normal.
+
+A level of 100-125 mgx/dL means impaired fasting glucose, a type of prediabetes. This increases risk for type 2 diabetes. A fasting glucose level of 126 mg/dL and higher indicates diabetic condition.
+Check here to see what you need to prevent or Check here how to control if that happens."
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/knowcholes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:text="FAQS">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Know your Cholestrol level." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/knowcholesa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:text="Cholesterol acts like a double edge sword. It is essential for our healthy life. It can also kill us (see, American Heart Association) if the level is high. So, know your cholesterol level and learn what you can do if the level is elevated.
+
+The National Cholesterol Education Program recommends that healthy adults get their cholesterol levels checked every five years.
+
+Desirable Cholesterol Levels
+
+Total cholesterol	Less than 200 mg/dL
+LDL (bad cholesterol)	Less than 100 mg/dL*
+HDL (good cholesterol)	40 mg/dL or higher
+Triglycerides	Less than 150 mg/dL
+"
+                android:visibility="gone" />
 
 
-</RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+    </LinearLayout>
+    <fragment
+        android:id="@+id/fragment_navigation_drawerfaqs"
+        android:name="activity.FragmentDrawer"
+        android:layout_width="@dimen/nav_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+</android.support.v4.widget.DrawerLayout>

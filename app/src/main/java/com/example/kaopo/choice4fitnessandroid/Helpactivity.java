@@ -55,7 +55,10 @@ public class Helpactivity extends Userinforactivity implements FragmentDrawer.Fr
         faqs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent mainIntent = new Intent().setClass(Helpactivity.this,Faqsactivity.class);
+                mainIntent.putExtra("FID",userId);
+                mainIntent.putExtra("FName",name);
+                startActivity(mainIntent);
             }
         });
         news.setOnClickListener(new View.OnClickListener() {
@@ -108,6 +111,35 @@ public class Helpactivity extends Userinforactivity implements FragmentDrawer.Fr
             startActivity(mainIntent);
 
         }
+        else if(position == 2){
+            Intent mainIntent = new Intent().setClass(Helpactivity.this,NutritionActivity.class);
+            mainIntent.putExtra("FID",userId);
+            mainIntent.putExtra("FName",name);
+            startActivity(mainIntent);
+
+        }
+        else if(position == 3){
+            Intent mainIntent = new Intent().setClass(Helpactivity.this,MusicActivity.class);
+            mainIntent.putExtra("FID",userId);
+            mainIntent.putExtra("FName",name);
+            startActivity(mainIntent);
+
+        }
+        else if(position == 4){
+            Intent mainIntent = new Intent().setClass(Helpactivity.this,ReportActivity.class);
+            mainIntent.putExtra("FID",userId);
+            mainIntent.putExtra("FName",name);
+            startActivity(mainIntent);
+
+        }
+        else if(position == 5){
+            Intent mainIntent = new Intent().setClass(Helpactivity.this,CommuntityActivity.class);
+            mainIntent.putExtra("FID",userId);
+            mainIntent.putExtra("FName",name);
+            startActivity(mainIntent);
+
+        }
+
     }
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
