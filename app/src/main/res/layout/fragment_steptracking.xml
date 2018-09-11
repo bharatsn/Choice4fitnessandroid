@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
@@ -10,124 +11,82 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true">
+
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content">
 
-            android:orientation="vertical">
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:text="Step Tracking"
-                android:textStyle="bold"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:layout_marginBottom="10dp"
-                />
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="Global Catalogue of Microorganism"
-                android:layout_marginLeft="10dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-
-                >
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="right" >
-
-
-                    <TextView
-                        android:id="@+id/gcm"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:textSize="16sp"
-                        android:textColor="#1e90ff"
-
-                        android:text="BCC"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginBottom="10dp"/>
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="PubMed.gov"
-                android:layout_marginLeft="10dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-
-                >
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="right" >
-
-
-                    <TextView
-                        android:id="@+id/pub"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:textSize="16sp"
-                        android:textColor="#1e90ff"
-                        android:text="BCC"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginBottom="10dp"/>
-                </RelativeLayout>
-
-            </LinearLayout>
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="NCBI"
-                android:layout_marginLeft="10dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-
-                >
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="right" >
-
-
-                    <TextView
-                        android:id="@+id/ncbi"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:textSize="16sp"
-                        android:textColor="#1e90ff"
-
-                        android:text="BCC"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginBottom="10dp"/>
-                </RelativeLayout>
-
-            </LinearLayout>
-        </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="STEP TRACK"
+        android:textStyle="bold"
+        tools:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="67dp"
+        android:text="STEPS" />
+
+    <TextView
+        android:id="@+id/txtCStepTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_marginTop="119dp"
+        android:text="Weekly" />
+
+    <TextView
+        android:id="@+id/txtStepWeekly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/Monthly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView11"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="170dp"
+        android:text="Monthly" />
+
+    <TextView
+        android:id="@+id/txtStepmonthly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Monthly"
+        android:layout_centerHorizontal="true"
+        android:text="0" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
 
 </RelativeLayout>

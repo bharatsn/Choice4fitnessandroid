@@ -23,13 +23,9 @@ public class Mypagertrackingadapter extends FragmentPagerAdapter {
 
     public Fragment getItem(int position) {
         if(position == 0)
-
-
-
-
-        return fragobj;
+            return fragobj;
         else if(position == 1)
-            return new TrackingStepFragment();
+            return new TrackingTimeFragment();
         else if(position == 2)
             return new TrackingActivityFragment();
         return null;

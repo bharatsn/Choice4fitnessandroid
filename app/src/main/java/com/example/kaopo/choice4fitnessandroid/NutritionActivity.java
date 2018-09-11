@@ -1,6 +1,8 @@
 package com.example.kaopo.choice4fitnessandroid;
 
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -38,6 +40,8 @@ public class NutritionActivity extends AppCompatActivity implements FragmentDraw
     ProfilePictureView profilePictureView;
     TextView idtext, Fname;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +62,8 @@ public class NutritionActivity extends AppCompatActivity implements FragmentDraw
                 getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawernutri);
         drawerFragment.setUp(R.id.fragment_navigation_drawernutri, (DrawerLayout) findViewById(R.id.drawer_layout), mToolbar);
         drawerFragment.setDrawerListener(this);
+
+
     }
 
     @Override
