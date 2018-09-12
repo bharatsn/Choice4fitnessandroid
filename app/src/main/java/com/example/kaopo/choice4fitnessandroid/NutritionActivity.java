@@ -11,8 +11,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +23,7 @@ import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
 import com.facebook.ProfileTracker;
 import com.facebook.login.widget.ProfilePictureView;
+
 
 
 
@@ -39,6 +42,9 @@ public class NutritionActivity extends AppCompatActivity implements FragmentDraw
     String userId, name;
     ProfilePictureView profilePictureView;
     TextView idtext, Fname;
+
+    Spinner spinnerPeriod;
+    ArrayAdapter<CharSequence> adapterPeriod;
 
 
 
@@ -63,6 +69,7 @@ public class NutritionActivity extends AppCompatActivity implements FragmentDraw
         drawerFragment.setUp(R.id.fragment_navigation_drawernutri, (DrawerLayout) findViewById(R.id.drawer_layout), mToolbar);
         drawerFragment.setDrawerListener(this);
 
+        spinnerPeriod =(Spinner)findViewById(R.id.periodSpinner);
 
     }
 

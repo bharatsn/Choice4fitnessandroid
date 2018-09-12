@@ -88,4 +88,14 @@
     <string name="title_help">Help</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
+
+    //spinner time period
+    <string-array name="period_time">
+        <item>Morning</item>
+        <item>Afternoon</item>
+        <item>Evening</item>
+        <item>Night</item>
+    </string-array>
+
+
 </resources>
