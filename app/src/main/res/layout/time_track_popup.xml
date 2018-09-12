@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnOKTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="57dp"
@@ -70,12 +70,12 @@
         app:layout_constraintTop_toBottomOf="@+id/etTimetrack2" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnCancelTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
         android:layout_marginTop="30dp"
         android:text="Cancel"
-        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/btnOKTime"
         app:layout_constraintTop_toBottomOf="@+id/etTimetrack2" />
 </android.support.constraint.ConstraintLayout>

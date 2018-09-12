@@ -49,50 +49,44 @@
                     android:layout_height="wrap_content">
 
                     <TableLayout
+                        android:id="@+id/tbl"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="40dp"
+                        android:layout_marginTop="30dp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toBottomOf="@+id/textView44">
 
-                        <TableRow
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:gravity="center">
-
-                            <TextView
-                                android:id="@+id/textView22"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
-
-                            <TextView
-                                android:id="@+id/textView21"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" />
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" />
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" />
                     </TableLayout>
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="51dp"
+                        android:layout_marginTop="47dp"
+                        android:text="Today"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTimeTr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="37dp"
+                        android:layout_marginTop="47dp"
+                        android:text="0"
+                        app:layout_constraintStart_toEndOf="@+id/textView44"
+                        app:layout_constraintTop_toTopOf="parent" />
                 </android.support.constraint.ConstraintLayout>
             </ScrollView>
         </FrameLayout>
 
         <ImageButton
-            android:id="@+id/btnTimeCreate"
+            android:id="@+id/btnTimeCreate1"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="55dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="76dp"
             android:background="@drawable/circle_button1"
             android:src="@drawable/farmacia_online1"
             android:text="Button"
@@ -103,8 +97,8 @@
             android:id="@+id/btnTimeSumma"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="107dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="76dp"
             android:background="@drawable/circle_button1"
             android:src="@drawable/barchart"
             android:text="Button"
